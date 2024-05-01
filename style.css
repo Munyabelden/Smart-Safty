@@ -1,3 +1,25 @@
+nav {
+  position: relative;
+}
+
+nav span {
+  position: relative;
+  background: rgb(40, 49, 65);
+  height: 0.2px;
+  width: 0;
+  -webkit-animation: grow 5000ms forwards; 
+  animation: grow 500ms forwards; 
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
 #home {
   background-image:  url(images/portrait-male-security-guard-with-uniform.png);
   height: 70vh;
@@ -12,12 +34,18 @@
   padding-top: 15rem;
   width: 75%;
   padding-left: 5%;
-  background: linear-gradient(to right, rgba(1, 18, 32, 0.6), rgba(1, 18, 32, 0.6),  rgba(1, 18, 32, 0.6), transparent);
+  background: linear-gradient(to right, rgba(1, 18, 32, 0.6), rgba(1, 18, 32, 0.6),  rgba(1, 18, 32, 0.6), rgba(1, 18, 32, 0.6), rgba(1, 18, 32, 0.6), transparent);
 }
 
 #home h1 {
   font-size: 40px;
   margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.safety {
+  color: rgb(144, 32, 32);
+  background: transparent;
 }
 
 /* #home h1::after {
@@ -33,4 +61,14 @@
   font-size: 17px;
   margin-top: 20px;
   padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+  #home {
+    background-image: url(images/portrait-male-security-guard-with-uniform.jpg);
+  }
+
+  #home div {
+    width: 100%;
+  }
 }
