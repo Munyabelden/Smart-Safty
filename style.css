@@ -1,0 +1,36 @@
+#home {
+  background-image:  url(images/portrait-male-security-guard-with-uniform.png);
+  height: 70vh;
+  background-position: right 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home div {
+  height: 100%;
+  padding: 40px;
+  padding-top: 18rem;
+  width: 75%;
+  padding-left: 5%;
+  background: linear-gradient(to right, rgba(1, 18, 32, 0.6), rgba(1, 18, 32, 0.6),  rgba(1, 18, 32, 0.6), transparent);
+}
+
+#home h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* #home h1::after {
+  content: '';
+  display: flex;
+  background: rgb(189, 44, 44);
+  height: 1px;
+  width: 50%;
+  margin: 10px auto;
+} */
+
+#home p {
+  font-size: 17px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
